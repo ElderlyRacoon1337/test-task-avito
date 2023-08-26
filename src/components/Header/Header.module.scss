@@ -1,0 +1,20 @@
+.root {
+  background-color: var(--background);
+  border-bottom: 1px solid #212224;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--headerBg);
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+  }
+}

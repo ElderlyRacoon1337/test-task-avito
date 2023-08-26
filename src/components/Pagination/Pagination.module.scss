@@ -1,0 +1,32 @@
+.pagination {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .pages {
+    span {
+      margin-right: 10px;
+      cursor: pointer;
+      user-select: none;
+      color: var(--textSecondary);
+      font-size: 1rem;
+    }
+
+    span:hover {
+      color: ligthen(var(--textSecondary, 10%));
+    }
+
+    .active {
+      color: var(--primary) !important;
+    }
+  }
+
+  .prevButton {
+    margin-right: 10px;
+  }
+  .nextButton {
+    margin-left: 10px;
+  }
+}

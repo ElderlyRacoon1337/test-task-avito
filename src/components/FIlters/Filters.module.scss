@@ -1,0 +1,28 @@
+.root {
+  padding: 30px 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.filter {
+  flex: 0 0 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__:last-child {
+    margin-right: 0;
+  }
+
+  p {
+    color: var(--textSecondary);
+    margin-right: 10px;
+  }
+}
