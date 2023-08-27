@@ -18,12 +18,8 @@ export const FullGameRight: React.FC<FullGameRightProps> = ({ data }) => {
         {data.screenshots ? (
           <Carousel infiniteLoop showStatus={false} showThumbs={false}>
             {data.screenshots.map((el, i) => (
-              <div>
-                <img
-                  className={styles.carousel__image}
-                  key={i}
-                  src={el.image}
-                />
+              <div key={i}>
+                <img className={styles.carousel__image} src={el.image} />
               </div>
             ))}
           </Carousel>

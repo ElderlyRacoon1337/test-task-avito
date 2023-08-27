@@ -7,9 +7,15 @@ export const Pagination = ({ currentPage, pages, pagesCount }: any) => {
   const dispatch = useAppDispatch();
   const onClickNext = () => {
     dispatch(setCurrentPage(currentPage + 1));
+    window.scrollTo(0, 0);
   };
   const onClickPrev = () => {
     dispatch(setCurrentPage(currentPage - 1));
+    window.scrollTo(0, 0);
+  };
+  const handleClickNumber = (page: number) => {
+    dispatch(setCurrentPage(page));
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -42,7 +48,7 @@ export const Pagination = ({ currentPage, pages, pagesCount }: any) => {
       <div className={styles.pages}>
         {pages.map((page: number, i: number) => (
           <span
-            onClick={() => dispatch(setCurrentPage(page))}
+            onClick={() => handleClickNumber(page)}
             className={currentPage == page ? styles.active : ""}
             key={i}
           >
