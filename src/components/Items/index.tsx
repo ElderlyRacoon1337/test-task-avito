@@ -26,7 +26,7 @@ export const Items: React.FC<ItemsProps> = ({ currentGames }) => {
               image={el.thumbnail}
               title={el.title}
               date={el.release_date}
-              creator={el.developer}
+              creator={el.publisher}
               genre={el.genre}
             />
           );
