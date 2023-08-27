@@ -30,3 +30,24 @@
     margin-left: 10px;
   }
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 500px) {
+  .pagination {
+    flex-direction: column;
+  }
+  .prevButton {
+    margin: 0 0 10px 0;
+  }
+  .nextButton {
+    margin: 10px 0 0 0;
+  }
+}

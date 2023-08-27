@@ -1,8 +1,8 @@
 import styles from "./Items.module.scss";
 import { Item } from "./item";
 import { useAppSelector } from "../../hooks";
-import { Game } from "../../redux/slices/gamesSlice";
 import { Loader } from "cutie-ui";
+import { Game } from "../../redux/types/types";
 
 interface ItemsProps {
   currentGames: Game[];

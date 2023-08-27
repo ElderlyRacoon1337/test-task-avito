@@ -2,7 +2,6 @@ import styles from "./GamePage.module.scss";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { useEffect } from "react";
 import {
-  Status,
   getOneGame,
   setGameLoadingStatus,
 } from "../../redux/slices/gamesSlice";
@@ -10,6 +9,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { FullGameLeft } from "../../components/FullGameLeft";
 import { FullGameRight } from "../../components/FullGameRight";
 import { Button, Icon, Loader } from "cutie-ui";
+import { Status } from "../../redux/types/types";
 
 export const GamePage = () => {
   const { id } = useParams();

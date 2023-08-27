@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./FullGameRight.module.scss";
-import { Game } from "../../redux/slices/gamesSlice";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Game } from "../../redux/types/types";
 
 interface FullGameRightProps {
   data?: Game;

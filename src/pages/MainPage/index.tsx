@@ -4,16 +4,13 @@ import { ThemeContext } from "cutie-ui";
 import { Items } from "../../components/Items";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setCurrentPage, setGamesData } from "../../redux/slices/pagesSlice";
-import {
-  Status,
-  getData,
-  setLoadingStatus,
-} from "../../redux/slices/gamesSlice";
+import { getData, setLoadingStatus } from "../../redux/slices/gamesSlice";
 import { Pagination } from "../../components/Pagination";
 import { createPages } from "../../utils/createPages";
 import { toEngGenre } from "../../utils/toEngGenre";
 import { toEngPlatform } from "../../utils/toEngPlatform";
 import { toEngSortBy } from "../../utils/toEngSortBy";
+import { Status } from "../../redux/types/types";
 
 export const MainPage = () => {
   const dispatch = useAppDispatch();

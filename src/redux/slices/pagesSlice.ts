@@ -1,11 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { Game } from "./gamesSlice";
-
-interface PagesState {
-  data: Game[];
-  currentPage: number;
-  perPage: number;
-}
+import { Game, PagesState } from "../types/types";
 
 const initialState: PagesState = {
   data: [],
